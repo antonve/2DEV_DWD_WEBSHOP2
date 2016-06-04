@@ -1,0 +1,448 @@
+@charset "UTF-8";
+
+/******************************************************
+** GENERAL
+******************************************************/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    font-size: 62.5%; /* == 10px; */
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+.error
+{
+    color: #ffcc00;
+    padding: 5px 0px;
+}
+
+input.error
+{
+    background: #ffcc00 right center url('../images/error.png') no-repeat !important;
+    padding-right: 25px !important;
+}
+
+h1
+{
+    color: #4b4b4b;
+    font-size: 2.3em;
+    font-weight: normal;
+}
+fieldset
+{
+    border: none;
+}
+
+legend
+{
+    display: none;
+}
+
+
+/******************************************************
+** ELEMENTS
+******************************************************/
+
+#container
+{
+    width: 940px;
+    margin: 0px auto;
+}
+
+#logo
+{
+    text-indent: -999999px;
+    display: block;
+    width: 279px;
+    height: 44px;
+    background: url('../images/logo.png') no-repeat;
+    margin-top: 36px;
+    margin-right: 70px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+#menu
+{
+    width: 315px;
+    float: left;
+    margin-top: 50px;
+}
+
+
+#menu li
+{
+    list-style-type: none;
+    width: 105px;
+    float: left;
+    height: 27px;
+}
+
+#menu li a
+{
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    height: 27px;
+    line-height: 27px;
+    padding: 0px 5px;
+}
+
+#menu li#active a, #menu li:hover a
+{
+    color: white;
+    background: url('../images/tile-red.png') repeat;
+}
+
+#search
+{
+    width: 210px;
+    float: right;
+    background: url('../images/tile-gray.png') repeat;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+}
+
+#search input[type="text"]
+{
+    color: #4b4b4b;
+    background: white;
+    border: none;
+    padding: 5px;
+    width: 146px;
+}
+
+#search input[type="submit"]
+{
+    color: white;
+    background: url('../images/tile-red.png') repeat;
+    border: none;
+    padding: 5px;
+    width: 50px;
+}
+
+#userpanel
+{
+    width: 210px;
+    float: right;
+    background: url('../images/tile-red.png') repeat;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+}
+
+#loginform
+{
+    width: 210px;
+    background: url('../images/tile-red.png') repeat;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+}
+
+#profile_form, #register_form
+{
+    width: 310px;
+    background: url('../images/tile-red.png') repeat;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.remember_me
+{
+    float: left;
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+#userpanel input[type="text"], #userpanel input[type="password"], #loginform input[type="password"], #loginform input[type="text"]
+{
+    color: #4b4b4b;
+    background: white;
+    border: none;
+    padding: 5px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+#profile_form input[type="text"], #profile_form input[type="password"], #register_form input[type="password"], #register_form input[type="text"]
+{
+    color: #4b4b4b;
+    background: white;
+    border: none;
+    padding: 5px;
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+#userpanel input.error, #loginform input.error
+{
+    width: 180px;
+}
+
+#profile_form input.error, #register_form input.error
+{
+    width: 280px;
+}
+
+#userpanel input[type="submit"], #register_form input[type="submit"], #loginform input[type="submit"], #profile_form input[type="submit"]
+{
+    color: white;
+    background: #4b4b4b;
+    border: none;
+    padding: 5px;
+    float: right;
+}
+
+.update_form
+{
+    float: right;
+}
+
+.update_form input[type="submit"]
+{
+    color: #4b4b4b;
+    background: white;
+    border: none;
+    padding: 5px;
+    width: 70px;
+    margin-bottom: 5px;
+    float: right;
+    margin-left: 5px;
+}
+
+.update_form input[type="text"]
+{
+    color: #4b4b4b;
+    background: white;
+    border: none;
+    padding: 5px;
+    width: 30px;
+    margin-bottom: 5px;
+    float: right;
+}
+
+#userpanel form a, #loginform a
+{
+    color: white;
+    float: left;
+    font-size: 1.1em;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.userpanel_links a
+{
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+    float: right;
+}
+
+#userpanel a:hover, #loginform a:hover
+{
+    text-decoration: underline;
+}
+
+.product-margin
+{
+    margin: 0px -10px 20px -10px;
+}
+
+.product
+{
+    width: 190px;
+    float: left;
+    background: url('../images/tile-gray.png') repeat;
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    position: relative;
+    min-height: 352px;
+}
+
+.product.hot-1
+{
+    background: url('../images/tile-red.png') repeat;
+}
+
+.product h2
+{
+    font-weight: normal;
+}
+
+.product.hot-0 h2 span
+{
+    display: none;
+}
+
+.product.hot-1 h2 span
+{
+    color: #f1c100 !important;
+}
+
+.product img
+{
+    display: block;
+    margin: 10px auto;
+}
+
+.product-description
+{
+    width: 190px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.product p
+{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product p+span
+{
+    font-size: 1.4em;
+}
+
+.product a
+{
+    color: #4b4b4b;
+    background: white;
+    padding: 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+    float: right;
+}
+
+#cart .remove-cart
+{
+    display: inline;
+}
+
+#content > .current-page
+{
+    display: block;
+}
+
+#total
+{
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+#search_container > p
+{
+    font-size: 1.3em;
+    margin: 0px 10px;
+}
+
+#register-page p
+{
+    font-size: 1.3em;
+}
+
+#products-filter
+{
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 1.5em;
+    color: white;
+    overflow: auto;
+}
+
+#products-filter form
+{
+    float: left;
+}
+
+.filter-true
+{
+    background: url('../images/tile-red.png') repeat;
+}
+
+.filter-false
+{
+    background: url('../images/tile-gray.png') repeat;
+}
+
+#products-filter select
+{
+    margin-right: 15px;
+}
+
+#cancel-filter
+{
+    float: right;
+    color: white;
+}
+
+.error_register
+{
+    background: orange !important;
+}
+
+p.error
+{
+    margin: 10px;
+    padding: 10px;
+    background: url('../images/tile-red.png') repeat;
+    font-style: italic;
+    font-size: 1.6em;
+    color: white;
+}
+
+#error500 > p, #error404 > p
+{
+    margin: 10px 0px;
+    padding: 10px;
+    background: url('../images/tile-red.png') repeat;
+    font-style: italic;
+    font-size: 1.6em;
+    color: white;
+}
+
+#error500 > ul
+{
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+#error500 > ul > li
+{
+    margin-top: 10px;
+    padding: 10px;
+    background: url('../images/tile-gray.png') repeat;
+    font-style: italic;
+    font-size: 1.6em;
+    color: white;
+}
+
+#gotocontent
+{
+    display: none;
+}
+
+/******************************************************
+** HELPERS
+******************************************************/
+
+.hide
+{
+    display: none;
+}
+
+.clearfix
+{
+    clear: both;
+}
